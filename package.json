@@ -1,0 +1,22 @@
+{
+  "name": "llm-agent-explainability-platform",
+  "version": "1.0.0",
+  "description": "Platform for studying explainability of LLM agents",
+  "main": "index.js",
+  "scripts": {
+    "start:api": "ts-node src/api/server.ts",
+    "experiment:run": "ts-node scripts/run_experiment.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.5.0",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
